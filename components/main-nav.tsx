@@ -35,4 +35,4 @@ const MainNav:React.FC<MainNavProps> = ({data}) => {
   )
 }
 
-export default MainNav
+export default MainNav 
