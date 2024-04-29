@@ -7,7 +7,6 @@ import { Expand, ShoppingCart } from "lucide-react";
 import Currency from "@/components/ui/currency";
 import { useRouter } from "next/navigation";
 
-
 interface ProductCard {
   data:Product
 }
