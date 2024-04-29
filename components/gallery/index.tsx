@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Image as ImageType } from "@/types"
 import { Tab } from "@headlessui/react"
@@ -6,7 +6,7 @@ import Image from "next/image"
 import GalleryTab from "./gallery-tab"
 
 interface GalleryProps {
-    images : ImageType[]
+    images : ImageType[];
 }
 
 const Gallery : React.FC<GalleryProps> = ({
