@@ -5,7 +5,6 @@ import { Category } from "@/types";
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-export const revaidate = 0;
 
 interface MainNavProps {
     data:Category[]
