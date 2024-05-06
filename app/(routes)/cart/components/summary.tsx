@@ -19,10 +19,10 @@ const Summary = () => {
     } , 0)
 
     const onCheckOut = async () => {
-        const response = await axios.post(`${process.env.PUBLIC_API_URL}/checkout` , {
-            productIds : items.map((item) => item.id)
+        const response= await axios.post(`${process.env.PUBLIC_API_URL}/checkout` , {
+            productIds: items.map((item) => item.id)
         })
-        window.location = response.data.url
+        window.location = response.data.url;       
     }
 
     useEffect(() => {
@@ -48,7 +48,7 @@ const Summary = () => {
                  <Currency value={totalPrice} />
             </div>
          </div>
-         <Button className="w-full mt-6">
+         <Button onClick={onCheckOut} className="w-full mt-6">
             Checkout
          </Button>
        </div>
