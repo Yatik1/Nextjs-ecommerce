@@ -19,7 +19,7 @@ const Summary = () => {
     } , 0)
 
     const onCheckOut = async () => {
-        const response= await axios.post(`http://localhost:3000/api/7d5a812d-6215-4972-a3b6-b5a6ad045111/checkout` , {
+        const response= await axios.post(`https://estore-admin-panel-orcin.vercel.app/api/7d5a812d-6215-4972-a3b6-b5a6ad045111/checkout` , {
             productIds: items.map((item) => item.id)
         })
         window.location = response.data.url;       
